@@ -1,14 +1,12 @@
 import Header from "../components/Header"
-import { useParams } from "react-router-dom"
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-export default function BeerDetails() {
-    const {beerId} = useParams()
+export default function RandomBeer() {
     const [beer, setBeer] = useState({})
 
     useEffect(()=>{
-        axios.get(`https://ih-beers-api2.herokuapp.com/beers/${beerId}`)
+        axios.get(`https://ih-beers-api2.herokuapp.com/beers/random`)
         .then(({data})=>{
             setBeer(data)
         })

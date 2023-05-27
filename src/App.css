@@ -1,8 +1,9 @@
-.App {
+Header {
   text-align: center;
 }
 
 .homePage {
+  text-align: center;
   display: flex;
   flex-direction: column;
 }
@@ -10,4 +11,13 @@
 header {
   background-color: aqua;
   height: 80px;
+}
+
+.card-img-top {
+  width: auto;
+  padding-top: 10px
+}
+
+form {
+  padding: 20px
 }
